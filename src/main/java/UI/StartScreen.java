@@ -167,7 +167,7 @@ public class StartScreen extends javax.swing.JFrame {
         String name = nameTextField.getText();
         String author = authorTextField.getText();
         //adding to the method class
-        Methods.addBooks(author, name);
+        BookManager.addBooks(author, name);
     }//GEN-LAST:event_addButtonActionPerformed
 
     
@@ -179,7 +179,7 @@ public class StartScreen extends javax.swing.JFrame {
     
     //retrieves the book details from backend and sets the bookInfo field to those details
     private void retrieveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_retrieveButtonActionPerformed
-        bookInfo.setText(Methods.getBooks());
+        bookInfo.setText(BookManager.getBooks());
     }//GEN-LAST:event_retrieveButtonActionPerformed
 
     
